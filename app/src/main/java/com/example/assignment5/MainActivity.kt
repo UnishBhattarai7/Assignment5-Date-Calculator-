@@ -60,7 +60,7 @@ class MainActivity : AppCompatActivity() {
 
         val datePickerDialog=DatePickerDialog(
             this, DatePickerDialog.OnDateSetListener { view, year, month, day ->
-              dob.setText("$year:$month:$day")
+              dob.setText("$year:${month+1}:$day")
             resultdob.setText(" You are ${year1-year} year and ${month1-(month)} month old.")
 
             },
